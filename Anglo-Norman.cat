@@ -1,0 +1,1531 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="e288-d6ac-3e40-ad69" name="Anglo-Norman" revision="3" battleScribeVersion="2.03" authorName="Jono Firth" library="false" gameSystemId="c749-87c2-0d4a-5e29" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="a4f5-7f30-a30f-47f3" name="Anglo-Norman" hidden="false"/>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry id="f4c9-3814-b05b-3285" name="Anglo-Norman Force" publicationId="20ec-fa11-b956-a9a3" page="64" hidden="false">
+      <categoryLinks>
+        <categoryLink id="319d-3b05-679e-d189" name="General" hidden="false" targetId="751f-d75f-25a5-8fd2" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d575-8e1f-2992-bd07" type="min"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e370-7dcb-efb4-cbfc" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a9a3-4898-7469-5a1e" name="Sub-commander" hidden="false" targetId="938e-c965-b5b3-5bbe" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6ee-a004-b890-c53f" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="c2f3-c8e8-2e98-e4b7" name="Core" hidden="false" targetId="6c30-70f1-cd1a-45af" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6f4-b9e1-f5ab-8d9f" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="05be-98f0-f570-de54" name="Support" hidden="false" targetId="ecd1-f7df-d397-f942" primary="false">
+          <modifiers>
+            <modifier type="increment" field="3dc9-42b0-f346-a27b" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6c30-70f1-cd1a-45af" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="3dc9-42b0-f346-a27b" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6a2-9a2b-35f2-7cc5" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d96b-c8be-88ba-c9bc" type="max"/>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dc9-42b0-f346-a27b" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e7cc-0a83-9897-9f29" name="Skirmish" hidden="false" targetId="e6a2-9a2b-35f2-7cc5" primary="false">
+          <modifiers>
+            <modifier type="increment" field="698e-e761-0f13-899f" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6c30-70f1-cd1a-45af" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="698e-e761-0f13-899f" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecd1-f7df-d397-f942" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0400-f3e4-d0c0-1556" type="max"/>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="698e-e761-0f13-899f" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="2b8e-13b2-9f18-7236" name="Allies" hidden="false" targetId="2475-8e0d-fc70-f2da" primary="false">
+          <constraints>
+            <constraint field="limit::591f-88f9-ff39-ed8b" scope="roster" value="30.0" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" id="e8e9-97af-91db-5e20" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <entryLinks>
+    <entryLink id="d25f-bf8d-ee02-f475" name="Dux" hidden="false" collective="false" import="true" targetId="72d6-d9d0-209b-09db" type="selectionEntry"/>
+    <entryLink id="3cf5-4075-1165-d0f8" name="Comes" hidden="false" collective="false" import="true" targetId="96cf-bae6-e411-1900" type="selectionEntry"/>
+    <entryLink id="827a-72a1-bee8-cbbe" name="Noble" hidden="false" collective="false" import="true" targetId="740f-f3c9-bae0-931a" type="selectionEntry"/>
+    <entryLink id="3e7e-12aa-9dc3-a391" name="Mounted Milites" hidden="false" collective="false" import="true" targetId="fc8a-9830-47b1-657d" type="selectionEntry"/>
+    <entryLink id="9bc8-9237-ea77-f97d" name="Spearmen" hidden="false" collective="false" import="true" targetId="9f17-b85b-82ec-1834" type="selectionEntry"/>
+    <entryLink id="da63-f7ad-c653-a195" name="Dismounted Milites" hidden="false" collective="false" import="true" targetId="f372-5773-1aa8-bcdd" type="selectionEntry"/>
+    <entryLink id="8c50-88f2-a513-fbdc" name="Archers" hidden="false" collective="false" import="true" targetId="bac2-5d32-425b-3ab1" type="selectionEntry"/>
+    <entryLink id="6bb4-5326-60ac-b4f8" name="Mercenary Crossbowmen" hidden="false" collective="false" import="true" targetId="0a6a-59ab-429f-c841" type="selectionEntry"/>
+    <entryLink id="fd69-b2c6-00bd-1522" name="Mounted Sergeants" hidden="false" collective="false" import="true" targetId="7b15-2f09-f1bb-b586" type="selectionEntry"/>
+    <entryLink id="9fd4-3919-d8ae-446e" name="English Sergeants" hidden="false" collective="false" import="true" targetId="f34b-61c8-a78c-1f9e" type="selectionEntry"/>
+    <entryLink id="875f-cafc-dc6a-c013" name="Militia" hidden="false" collective="false" import="true" targetId="7afc-bd8c-3c4f-2fad" type="selectionEntry"/>
+    <entryLink id="abf7-51ef-5e83-d9fb" name="Skirmishers" hidden="false" collective="false" import="true" targetId="c1bc-25be-ab3b-e688" type="selectionEntry"/>
+    <entryLink id="46ad-459d-cf32-3670" name="Bonnachts" hidden="false" collective="false" import="true" targetId="24d6-8081-f725-8af6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ec40-57bb-6a18-8e5e" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="54f0-459a-38a7-c24b" name="Allies Options" hidden="false" collective="false" import="true" targetId="6759-a224-d840-3451" type="selectionEntry"/>
+    <entryLink id="fa17-ae5b-27cf-1ef6" name="Dismounted Fianna (Family)" hidden="false" collective="false" import="true" targetId="757d-50d9-5a39-da46" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ec40-57bb-6a18-8e5e" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="1979-2335-d75d-bc6c" name="Kerns" hidden="false" collective="false" import="true" targetId="d6e2-1eb3-c3a2-d4f5" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ec40-57bb-6a18-8e5e" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="e1ec-4473-0203-7400" name="Ri-Tuaithe" hidden="false" collective="false" import="true" targetId="b166-0ec8-1fd9-a849" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ec40-57bb-6a18-8e5e" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="c625-b8b9-7dfd-ac1c" name="Bonnedig" hidden="false" collective="false" import="true" targetId="afb2-d501-7a42-11f8" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e0b-02a8-9de8-4759" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="93e0-e267-f787-37e9" name="Dismounted Teulu (Family)" hidden="false" collective="false" import="true" targetId="467a-6731-c029-f12f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e0b-02a8-9de8-4759" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="c9f7-c0df-fe58-507d" name="Priodaur (Freemen) Warriors of Gwynedd" hidden="false" collective="false" import="true" targetId="67e2-b4e5-5181-f637" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e0b-02a8-9de8-4759" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="f2ed-d196-86a8-0a9e" name="Uchelwyr" hidden="false" collective="false" import="true" targetId="7c9e-ceec-274a-286e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e0b-02a8-9de8-4759" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="d259-2319-5dfd-d7d9" name="Strategy Rating" publicationId="20ec-fa11-b956-a9a3" page="64" hidden="false">
+      <description>3</description>
+    </rule>
+    <rule id="3507-bb1d-40a3-8013" name="Climate" publicationId="20ec-fa11-b956-a9a3" page="64" hidden="false">
+      <description>Fertile</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="72d6-d9d0-209b-09db" name="Dux" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b743-3447-60b0-3d8a" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="332c-69a0-5109-9793" name="Dux" publicationId="20ec-fa11-b956-a9a3" page="65" hidden="false" typeId="36c8-86fe-73b0-e291" typeName="Commander">
+          <modifierGroups>
+            <modifierGroup>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="72d6-d9d0-209b-09db" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c26b-0667-e4ca-df48" type="equalTo"/>
+                    <condition field="selections" scope="72d6-d9d0-209b-09db" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0781-c817-ce35-96ba" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <modifiers>
+                <modifier type="set" field="6485-383d-d616-b0c9" value="+2"/>
+                <modifier type="set" field="bc36-a6fe-45e8-c852" value="Army General; Mounted;"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <characteristics>
+            <characteristic name="DL" typeId="cb02-354e-b90e-0e66">9 +2</characteristic>
+            <characteristic name="ML" typeId="6435-2008-46e4-0b56">9 +2</characteristic>
+            <characteristic name="ATTACKS" typeId="6485-383d-d616-b0c9">+3</characteristic>
+            <characteristic name="Notes &amp; Traits" typeId="bc36-a6fe-45e8-c852">Army General; Heroic Leader; Mounted</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1f28-9d89-4f9f-3051" name="3. Heroic Leader" hidden="false" targetId="bb1e-f53f-e3ea-91da" type="profile">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="72d6-d9d0-209b-09db" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c26b-0667-e4ca-df48" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d48d-f0d9-1ee4-2092" name="Anglo-Norman" hidden="false" targetId="a4f5-7f30-a30f-47f3" primary="false"/>
+        <categoryLink id="8301-c7b0-6d0a-13ad" name="New CategoryLink" hidden="false" targetId="751f-d75f-25a5-8fd2" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="17fd-7319-75da-7996" name="Upgrades" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="c26b-0667-e4ca-df48" name="Remove Heroic Leader" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cecb-4a85-4fbe-f31c" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8998-b93c-09c6-a59d" name="Frankish/Norman/Christian Spanish General Traits" hidden="false" collective="false" import="true" targetId="da73-6c22-2219-b9af" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="60.0"/>
+        <cost name="vp" typeId="506b-6131-c00a-3959" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="96cf-bae6-e411-1900" name="Comes" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="f9a3-70c9-0a30-0dc7" name="Comes" publicationId="20ec-fa11-b956-a9a3" page="65" hidden="false" typeId="36c8-86fe-73b0-e291" typeName="Commander">
+          <modifierGroups>
+            <modifierGroup>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="96cf-bae6-e411-1900" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18ec-7a67-253e-d2cf" type="equalTo"/>
+                    <condition field="selections" scope="96cf-bae6-e411-1900" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0781-c817-ce35-96ba" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <modifiers>
+                <modifier type="set" field="6485-383d-d616-b0c9" value="+1"/>
+                <modifier type="set" field="bc36-a6fe-45e8-c852" value="Army General; Mounted;"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <characteristics>
+            <characteristic name="DL" typeId="cb02-354e-b90e-0e66">8 +1</characteristic>
+            <characteristic name="ML" typeId="6435-2008-46e4-0b56">8 +1</characteristic>
+            <characteristic name="ATTACKS" typeId="6485-383d-d616-b0c9">+2</characteristic>
+            <characteristic name="Notes &amp; Traits" typeId="bc36-a6fe-45e8-c852">Army General; Heroic Leader; Mounted</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6763-6e92-5848-3b26" name="3. Heroic Leader" hidden="false" targetId="bb1e-f53f-e3ea-91da" type="profile">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="96cf-bae6-e411-1900" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18ec-7a67-253e-d2cf" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="34a0-c495-818c-2461" name="Anglo-Norman" hidden="false" targetId="a4f5-7f30-a30f-47f3" primary="false"/>
+        <categoryLink id="30b7-5646-d72b-a72f" name="New CategoryLink" hidden="false" targetId="751f-d75f-25a5-8fd2" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="98ae-9018-9bff-97ed" name="Upgrades" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="18ec-7a67-253e-d2cf" name="Remove Heroic Leader" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b98d-e6cd-28d0-544b" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e423-046f-8956-7e11" name="Frankish/Norman/Christian Spanish General Traits" hidden="false" collective="false" import="true" targetId="da73-6c22-2219-b9af" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+        <cost name="vp" typeId="506b-6131-c00a-3959" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="740f-f3c9-bae0-931a" name="Noble" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="409a-f7e0-b255-f60f" name="Noble" publicationId="20ec-fa11-b956-a9a3" page="65" hidden="false" typeId="36c8-86fe-73b0-e291" typeName="Commander">
+          <modifiers>
+            <modifier type="set" field="cb02-354e-b90e-0e66" value="7 +0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="740f-f3c9-bae0-931a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcd2-2007-4f2f-268c" type="equalTo"/>
+                    <condition field="selections" scope="740f-f3c9-bae0-931a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f156-eea5-f000-5e31" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="DL" typeId="cb02-354e-b90e-0e66">8 +1</characteristic>
+            <characteristic name="ML" typeId="6435-2008-46e4-0b56">8 +1</characteristic>
+            <characteristic name="ATTACKS" typeId="6485-383d-d616-b0c9">+2</characteristic>
+            <characteristic name="Notes &amp; Traits" typeId="bc36-a6fe-45e8-c852">Heroic Leader; Mounted</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="52ac-2e34-2e47-e45c" name="3. Heroic Leader" hidden="false" targetId="bb1e-f53f-e3ea-91da" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0981-447b-95b5-52bb" name="Anglo-Norman" hidden="false" targetId="a4f5-7f30-a30f-47f3" primary="false"/>
+        <categoryLink id="817d-0875-d7eb-bf84" name="New CategoryLink" hidden="false" targetId="938e-c965-b5b3-5bbe" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="bf9d-634e-11e5-433b" name="Frankish/Norman/Christian Spanish Sub-commander Traits" hidden="false" collective="false" import="true" targetId="1477-fe82-5109-0e5d" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="65.0"/>
+        <cost name="vp" typeId="506b-6131-c00a-3959" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fc8a-9830-47b1-657d" name="Mounted Milites" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="fc8a-9830-47b1-657d" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="fc8a-9830-47b1-657d" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f22-28ad-7629-f61f" type="min"/>
+        <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55fd-fd69-5f9d-59dc" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="b008-a97d-8f8f-fa68" name="Hand Weapon" hidden="false" targetId="dda4-6e6a-60bc-59ea" type="profile"/>
+        <infoLink id="f325-078d-e562-c4c6" name="Light Armour" hidden="false" targetId="81fc-0bff-813c-b483" type="profile">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="fc8a-9830-47b1-657d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82b8-362f-c76a-1fb7" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="6bcc-e4db-877a-1e09" name="Shield" hidden="false" targetId="9860-76f4-ad49-15bb" type="profile"/>
+        <infoLink id="8080-7ddd-2e5e-deba" name="Interpenetration" hidden="false" targetId="6e11-fa86-7e38-4cf1" type="rule"/>
+        <infoLink id="12e8-da17-2220-973a" name="Fearsome" hidden="false" targetId="745c-e091-befd-e7e5" type="rule"/>
+        <infoLink id="431c-6922-61b7-6b83" name="Shock Cavalry" hidden="false" targetId="7a38-a60f-b343-812a" type="rule"/>
+        <infoLink id="37f7-17d0-eca6-4239" name="Warhorses" hidden="false" targetId="096e-064f-a46d-36d7" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f5c0-ddfa-1a18-1270" name="Anglo-Norman" hidden="false" targetId="a4f5-7f30-a30f-47f3" primary="false"/>
+        <categoryLink id="6a8b-9ca2-fca6-04e1" name="New CategoryLink" hidden="false" targetId="6c30-70f1-cd1a-45af" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1e45-a2f3-315f-54f2" name="Mounted Milites" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="8c12-6c20-235c-2b0d" value="9.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b743-3447-60b0-3d8a" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01cc-d818-9481-de11" type="min"/>
+            <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c12-6c20-235c-2b0d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5486-7c43-0a3a-e1b0" name="Mounted Milites" publicationId="20ec-fa11-b956-a9a3" page="65" hidden="false" typeId="b0ae-179f-841c-7b6a" typeName="1. Unit">
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="fc8a-9830-47b1-657d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82b8-362f-c76a-1fb7" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="f38d-b4f2-0682-8832" value="3+"/>
+                    <modifier type="set" field="c658-9299-8241-d18b" value="18"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <characteristics>
+                <characteristic name="ORDER" typeId="15ee-a9d5-dc49-608e">Open</characteristic>
+                <characteristic name="MR" typeId="c658-9299-8241-d18b">20</characteristic>
+                <characteristic name="SHOOT" typeId="8cb5-c4aa-5a25-14a8">4+</characteristic>
+                <characteristic name="ATTACKS" typeId="12eb-8f76-2dc7-39cb">1</characteristic>
+                <characteristic name="HTH" typeId="8b70-2a78-827d-359f">4</characteristic>
+                <characteristic name="ARM" typeId="f38d-b4f2-0682-8832">4+</characteristic>
+                <characteristic name="KILL" typeId="b18e-b1c4-c216-8928">4+</characteristic>
+                <characteristic name="HITS" typeId="8372-2180-0579-5cc1">1</characteristic>
+                <characteristic name="DL" typeId="08c7-9b20-fc1c-5f73">7</characteristic>
+                <characteristic name="ML" typeId="f143-b5d0-5cec-c2e4">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="41.0"/>
+            <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9b8e-5201-7e73-1f22" name="Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="db7e-c1f0-0390-625c">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a0c-b42b-f6da-5848" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e87d-397c-a90c-d759" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="db7e-c1f0-0390-625c" name="Long Spears" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11fb-317c-e9b0-8ac7" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8b72-7439-1b1e-a319" name="Long Spear (Mounted)" hidden="false" targetId="fcc2-904c-a694-d181" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0d42-a6af-f39f-2b6f" name="Throwing Spears" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2b3-7662-1604-34dc" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="bee1-c3d6-6e2f-3c24" name="Throwing Spears (Skirmish Order Units or Cavalry in a single rank)" hidden="false" targetId="d331-29cd-1cd4-d88b" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b394-0860-f107-1f23" name="Upgrades" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="82b8-362f-c76a-1fb7" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="3.0">
+                  <repeats>
+                    <repeat field="selections" scope="fc8a-9830-47b1-657d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="634b-b558-9ba3-6f26" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8489-0ff8-957a-587a" name="Heavy Armour" hidden="false" targetId="a32c-1fe1-2c0d-91ae" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fa93-b4d1-0c30-bf7c" name="Steady" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="3.0">
+                  <repeats>
+                    <repeat field="selections" scope="fc8a-9830-47b1-657d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16c6-2777-7e6e-82fc" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="cef3-b7b3-1c3d-d666" name="Steady" hidden="false" targetId="1705-62c2-9b2a-df54" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e110-f193-feaf-dc41" name="Javelins" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="fc8a-9830-47b1-657d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e66-4af1-08a0-ca85" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="31ac-337d-7a41-ac24" name="Javelin" hidden="false" targetId="f208-4232-9ce6-abe2" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+        <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9f17-b85b-82ec-1834" name="Spearmen" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="9f17-b85b-82ec-1834" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="9f17-b85b-82ec-1834" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2fe-d66f-f392-9797" type="min"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="783f-357a-361b-8614" name="Long Spear (Foot)" hidden="false" targetId="c008-6cbe-2fe2-ae55" type="profile"/>
+        <infoLink id="b7a9-989a-bb0d-2b8b" name="Hand Weapon" hidden="false" targetId="dda4-6e6a-60bc-59ea" type="profile"/>
+        <infoLink id="2721-eda6-6523-cf38" name="Light Armour" hidden="false" targetId="81fc-0bff-813c-b483" type="profile"/>
+        <infoLink id="7a42-7cda-4443-a17d" name="Shield" hidden="false" targetId="9860-76f4-ad49-15bb" type="profile"/>
+        <infoLink id="6d38-48f6-4f5d-cfbc" name="Shieldwall" hidden="false" targetId="b5f5-8825-73ae-f1cf" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a6a4-b37c-69df-d747" name="Anglo-Norman" hidden="false" targetId="a4f5-7f30-a30f-47f3" primary="false"/>
+        <categoryLink id="ec34-19b8-6f0b-3f5d" name="New CategoryLink" hidden="false" targetId="6c30-70f1-cd1a-45af" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b2b7-32ba-9261-b7f4" name="Spearmen" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="69ac-1b40-66b5-70e5" value="22.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b743-3447-60b0-3d8a" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bb3-2516-ab49-da1a" type="min"/>
+            <constraint field="selections" scope="parent" value="40.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69ac-1b40-66b5-70e5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="52a0-74b6-ce62-1c5c" name="Spearmen" publicationId="20ec-fa11-b956-a9a3" page="65" hidden="false" typeId="b0ae-179f-841c-7b6a" typeName="1. Unit">
+              <characteristics>
+                <characteristic name="ORDER" typeId="15ee-a9d5-dc49-608e">Closed</characteristic>
+                <characteristic name="MR" typeId="c658-9299-8241-d18b">10</characteristic>
+                <characteristic name="SHOOT" typeId="8cb5-c4aa-5a25-14a8">4+</characteristic>
+                <characteristic name="ATTACKS" typeId="12eb-8f76-2dc7-39cb">1</characteristic>
+                <characteristic name="HTH" typeId="8b70-2a78-827d-359f">3</characteristic>
+                <characteristic name="ARM" typeId="f38d-b4f2-0682-8832">5+</characteristic>
+                <characteristic name="KILL" typeId="b18e-b1c4-c216-8928">4+</characteristic>
+                <characteristic name="HITS" typeId="8372-2180-0579-5cc1">1</characteristic>
+                <characteristic name="DL" typeId="08c7-9b20-fc1c-5f73">6</characteristic>
+                <characteristic name="ML" typeId="f143-b5d0-5cec-c2e4">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="12.0"/>
+            <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8cd8-3c47-6d69-5c3e" name="Upgrades" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="c7cb-5004-c8b6-5d1b" name="Javelins" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="9f17-b85b-82ec-1834" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec15-aac9-0ea1-b02d" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="583f-69f6-8446-b4c6" name="Javelin" hidden="false" targetId="f208-4232-9ce6-abe2" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+        <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f372-5773-1aa8-bcdd" name="Dismounted Milites" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="f372-5773-1aa8-bcdd" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="f372-5773-1aa8-bcdd" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65ca-baa8-b2de-aa75" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="c2bd-6659-dd9f-8b8a" name="Long Spear (Foot)" hidden="false" targetId="c008-6cbe-2fe2-ae55" type="profile"/>
+        <infoLink id="3582-06af-3934-d937" name="Hand Weapon" hidden="false" targetId="dda4-6e6a-60bc-59ea" type="profile"/>
+        <infoLink id="f5d1-c46a-88c3-ec0b" name="Light Armour" hidden="false" targetId="81fc-0bff-813c-b483" type="profile"/>
+        <infoLink id="adab-7cc5-b788-173b" name="Large Shield" hidden="false" targetId="145a-2d37-b92d-c73f" type="profile"/>
+        <infoLink id="1ce4-3e09-7d2c-aff2" name="Mixed Formation" hidden="false" targetId="f003-03eb-dd78-f765" type="rule"/>
+        <infoLink id="737a-20dc-32e8-b432" name="Shieldwall" hidden="false" targetId="b5f5-8825-73ae-f1cf" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b1cb-dd10-7951-5931" name="Anglo-Norman" hidden="false" targetId="a4f5-7f30-a30f-47f3" primary="false"/>
+        <categoryLink id="051b-13b9-9840-9f85" name="New CategoryLink" hidden="false" targetId="ecd1-f7df-d397-f942" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8474-94e0-78a3-ef7a" name="Dismounted Milites" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="9205-8d3c-4b6b-0395" value="18.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b743-3447-60b0-3d8a" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c98-3c83-3e9e-ff6c" type="min"/>
+            <constraint field="selections" scope="parent" value="24.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9205-8d3c-4b6b-0395" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ea47-5b7a-2241-4ff1" name="Dismounted Milites" publicationId="20ec-fa11-b956-a9a3" page="66" hidden="false" typeId="b0ae-179f-841c-7b6a" typeName="1. Unit">
+              <characteristics>
+                <characteristic name="ORDER" typeId="15ee-a9d5-dc49-608e">Closed</characteristic>
+                <characteristic name="MR" typeId="c658-9299-8241-d18b">10</characteristic>
+                <characteristic name="SHOOT" typeId="8cb5-c4aa-5a25-14a8">4+</characteristic>
+                <characteristic name="ATTACKS" typeId="12eb-8f76-2dc7-39cb">1</characteristic>
+                <characteristic name="HTH" typeId="8b70-2a78-827d-359f">4</characteristic>
+                <characteristic name="ARM" typeId="f38d-b4f2-0682-8832">4+</characteristic>
+                <characteristic name="KILL" typeId="b18e-b1c4-c216-8928">4+</characteristic>
+                <characteristic name="HITS" typeId="8372-2180-0579-5cc1">1</characteristic>
+                <characteristic name="DL" typeId="08c7-9b20-fc1c-5f73">7</characteristic>
+                <characteristic name="ML" typeId="f143-b5d0-5cec-c2e4">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="20.0"/>
+            <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f081-b991-5924-c32e" name="Upgrades" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="ca2a-d649-ac57-655a" name="Javelins" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="f372-5773-1aa8-bcdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24e7-0e88-22e5-3b7b" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="2564-af03-ddd4-6fd1" name="Javelin" hidden="false" targetId="f208-4232-9ce6-abe2" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="559a-1ed3-c79e-2a44" name="Two Handed Weapons" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="2.0">
+                  <repeats>
+                    <repeat field="selections" scope="f372-5773-1aa8-bcdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee7f-6235-9f32-7b76" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="09c2-9194-8db8-6cd4" name="Two Handed Weapons" publicationId="20ec-fa11-b956-a9a3" page="66" hidden="false">
+                  <description>This entitles one half of the front rank atack dice to be with the weapon upgrade. For example, if a unit had 9 attacks, 4 would be with two handed weapons. The player must decide to use this option or not before any dice for combat are rolled.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="885c-98b1-95e4-5216" name="Two Handed Weapon" hidden="false" targetId="33a0-ae5b-2091-b2e7" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+        <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bac2-5d32-425b-3ab1" name="Archers" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="bac2-5d32-425b-3ab1" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="bac2-5d32-425b-3ab1" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28fd-6591-3cce-75a3" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="0a79-0532-080e-3419" name="Bow, Composite" hidden="false" targetId="f8fc-8cab-0ffb-6bde" type="profile"/>
+        <infoLink id="fb51-5302-5f70-efdd" name="Hand Weapon" hidden="false" targetId="dda4-6e6a-60bc-59ea" type="profile"/>
+        <infoLink id="f3b7-e7f9-79cf-ab4b" name="Expert Archers" hidden="false" targetId="70a0-3115-9d7a-fb90" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a4fd-2814-0942-04db" name="Anglo-Norman" hidden="false" targetId="a4f5-7f30-a30f-47f3" primary="false"/>
+        <categoryLink id="a500-2717-4a9f-16bc" name="New CategoryLink" hidden="false" targetId="ecd1-f7df-d397-f942" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4c6c-b0cd-c87c-cc6f" name="Archers" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="a768-ee9b-15c8-ec2d" value="18.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b743-3447-60b0-3d8a" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a92-8afc-e295-31ba" type="min"/>
+            <constraint field="selections" scope="parent" value="24.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a768-ee9b-15c8-ec2d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="396d-0e92-a8eb-a68f" name="Archers" publicationId="20ec-fa11-b956-a9a3" page="66" hidden="false" typeId="b0ae-179f-841c-7b6a" typeName="1. Unit">
+              <modifiers>
+                <modifier type="set" field="f38d-b4f2-0682-8832" value="6">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="bac2-5d32-425b-3ab1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="02b1-f73c-8e8b-0f4d" type="equalTo"/>
+                        <condition field="selections" scope="bac2-5d32-425b-3ab1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6914-2fd4-1c5f-0989" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="ORDER" typeId="15ee-a9d5-dc49-608e">Open</characteristic>
+                <characteristic name="MR" typeId="c658-9299-8241-d18b">10</characteristic>
+                <characteristic name="SHOOT" typeId="8cb5-c4aa-5a25-14a8">4+</characteristic>
+                <characteristic name="ATTACKS" typeId="12eb-8f76-2dc7-39cb">1</characteristic>
+                <characteristic name="HTH" typeId="8b70-2a78-827d-359f">3</characteristic>
+                <characteristic name="ARM" typeId="f38d-b4f2-0682-8832">N/A</characteristic>
+                <characteristic name="KILL" typeId="b18e-b1c4-c216-8928">4+</characteristic>
+                <characteristic name="HITS" typeId="8372-2180-0579-5cc1">1</characteristic>
+                <characteristic name="DL" typeId="08c7-9b20-fc1c-5f73">6</characteristic>
+                <characteristic name="ML" typeId="f143-b5d0-5cec-c2e4">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="10.0"/>
+            <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="317f-cb26-fb37-bebf" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c95-87ff-97dd-cda9" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="02b1-f73c-8e8b-0f4d" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="bac2-5d32-425b-3ab1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b8d-ab3c-e2f2-1dc1" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="b757-cef0-bf23-8707" name="Light Armour" hidden="false" targetId="81fc-0bff-813c-b483" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6914-2fd4-1c5f-0989" name="Shields" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="bac2-5d32-425b-3ab1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41db-50fd-f44b-e606" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="453e-8e0f-5db7-8a5c" name="Shield" hidden="false" targetId="9860-76f4-ad49-15bb" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+        <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0a6a-59ab-429f-c841" name="Mercenary Crossbowmen" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bac2-5d32-425b-3ab1" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="0a6a-59ab-429f-c841" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="0a6a-59ab-429f-c841" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3328-79f4-100c-6d3e" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="4a51-3355-569f-46ac" name="Crossbow, Heavy" hidden="false" targetId="a5b2-15ea-1e29-b68d" type="profile"/>
+        <infoLink id="6de4-4e0d-a248-1185" name="Hand Weapon" hidden="false" targetId="dda4-6e6a-60bc-59ea" type="profile"/>
+        <infoLink id="7f80-a0d9-9478-379f" name="Mercenaries" hidden="false" targetId="1b74-7ea6-cf1f-c6dd" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b88c-7c26-374e-4fe7" name="Anglo-Norman" hidden="false" targetId="a4f5-7f30-a30f-47f3" primary="false"/>
+        <categoryLink id="a46d-8678-84fb-8e89" name="New CategoryLink" hidden="false" targetId="ecd1-f7df-d397-f942" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c2f7-3245-1b81-5474" name="Mercenary Crossbowmen" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="031d-8974-d31a-6939" value="15.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b743-3447-60b0-3d8a" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0198-c411-e805-3077" type="min"/>
+            <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="031d-8974-d31a-6939" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="49e3-fb2f-f16a-6675" name="Mercenary Crossbowmen" publicationId="20ec-fa11-b956-a9a3" page="66" hidden="false" typeId="b0ae-179f-841c-7b6a" typeName="1. Unit">
+              <modifiers>
+                <modifier type="set" field="f38d-b4f2-0682-8832" value="6">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="0a6a-59ab-429f-c841" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="98f0-d26a-7e59-e33a" type="equalTo"/>
+                        <condition field="selections" scope="0a6a-59ab-429f-c841" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf7e-8d22-38b1-4e4c" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="ORDER" typeId="15ee-a9d5-dc49-608e">Open</characteristic>
+                <characteristic name="MR" typeId="c658-9299-8241-d18b">10</characteristic>
+                <characteristic name="SHOOT" typeId="8cb5-c4aa-5a25-14a8">4+</characteristic>
+                <characteristic name="ATTACKS" typeId="12eb-8f76-2dc7-39cb">1</characteristic>
+                <characteristic name="HTH" typeId="8b70-2a78-827d-359f">3</characteristic>
+                <characteristic name="ARM" typeId="f38d-b4f2-0682-8832">N/A</characteristic>
+                <characteristic name="KILL" typeId="b18e-b1c4-c216-8928">4+</characteristic>
+                <characteristic name="HITS" typeId="8372-2180-0579-5cc1">1</characteristic>
+                <characteristic name="DL" typeId="08c7-9b20-fc1c-5f73">7</characteristic>
+                <characteristic name="ML" typeId="f143-b5d0-5cec-c2e4">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="13.0"/>
+            <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b0ec-9524-3a3c-ea8a" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e561-9173-11f7-3a75" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="98f0-d26a-7e59-e33a" name="Light Armour" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="0a6a-59ab-429f-c841" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f736-034e-247a-eb88" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7e98-41e9-d27c-45c4" name="Light Armour" hidden="false" targetId="81fc-0bff-813c-b483" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cf7e-8d22-38b1-4e4c" name="Shields" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="0a6a-59ab-429f-c841" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09e7-4521-cb82-8d65" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ce5c-d153-488c-7f61" name="Shield" hidden="false" targetId="9860-76f4-ad49-15bb" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+        <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7b15-2f09-f1bb-b586" name="Mounted Sergeants" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="7b15-2f09-f1bb-b586" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="7b15-2f09-f1bb-b586" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f2c-e93d-5fca-9d64" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="996e-7758-39a2-9b02" name="Long Spear (Mounted)" hidden="false" targetId="fcc2-904c-a694-d181" type="profile"/>
+        <infoLink id="8732-8b5e-a492-3fed" name="Hand Weapon" hidden="false" targetId="dda4-6e6a-60bc-59ea" type="profile"/>
+        <infoLink id="652e-2811-2752-1fae" name="Light Armour" hidden="false" targetId="81fc-0bff-813c-b483" type="profile"/>
+        <infoLink id="1b45-6bb2-c89e-612f" name="Shield" hidden="false" targetId="9860-76f4-ad49-15bb" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="df43-782d-9e6d-7630" name="Anglo-Norman" hidden="false" targetId="a4f5-7f30-a30f-47f3" primary="false"/>
+        <categoryLink id="4c5a-e6fa-bd3b-c650" name="New CategoryLink" hidden="false" targetId="ecd1-f7df-d397-f942" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="28c1-04a3-4350-4e82" name="Mounted Sergeants" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="df47-496d-edd8-b0b4" value="9.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b743-3447-60b0-3d8a" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03c9-d79a-76c3-8c82" type="min"/>
+            <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df47-496d-edd8-b0b4" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="75b6-e418-1203-f5e3" name="Mounted Sergeants" publicationId="20ec-fa11-b956-a9a3" page="66" hidden="false" typeId="b0ae-179f-841c-7b6a" typeName="1. Unit">
+              <modifiers>
+                <modifier type="set" field="15ee-a9d5-dc49-608e" value="Skirmish">
+                  <conditions>
+                    <condition field="selections" scope="7b15-2f09-f1bb-b586" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="50f6-91c5-67c1-98aa" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="ORDER" typeId="15ee-a9d5-dc49-608e">Open</characteristic>
+                <characteristic name="MR" typeId="c658-9299-8241-d18b">20</characteristic>
+                <characteristic name="SHOOT" typeId="8cb5-c4aa-5a25-14a8">4+</characteristic>
+                <characteristic name="ATTACKS" typeId="12eb-8f76-2dc7-39cb">1</characteristic>
+                <characteristic name="HTH" typeId="8b70-2a78-827d-359f">3</characteristic>
+                <characteristic name="ARM" typeId="f38d-b4f2-0682-8832">4+</characteristic>
+                <characteristic name="KILL" typeId="b18e-b1c4-c216-8928">4+</characteristic>
+                <characteristic name="HITS" typeId="8372-2180-0579-5cc1">1</characteristic>
+                <characteristic name="DL" typeId="08c7-9b20-fc1c-5f73">6</characteristic>
+                <characteristic name="ML" typeId="f143-b5d0-5cec-c2e4">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="25.0"/>
+            <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c867-077d-c78c-c710" name="Order" hidden="false" collective="false" import="true" defaultSelectionEntryId="317b-e3b5-093d-cfeb">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e95a-8761-b4eb-bf4a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="653f-0900-91b7-5e75" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="317b-e3b5-093d-cfeb" name="Open" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="095c-7f21-4769-ebd9" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="50f6-91c5-67c1-98aa" name="Skirmish" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6cf-130e-1fe6-6944" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+        <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f34b-61c8-a78c-1f9e" name="English Sergeants" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="f34b-61c8-a78c-1f9e" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="f34b-61c8-a78c-1f9e" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="97d3-eef2-2349-8588" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="0966-b7de-0d9c-08a9" name="Long Spear (Foot)" hidden="false" targetId="c008-6cbe-2fe2-ae55" type="profile"/>
+        <infoLink id="98b6-e603-221c-0f4b" name="Hand Weapon" hidden="false" targetId="dda4-6e6a-60bc-59ea" type="profile"/>
+        <infoLink id="d8d2-fa3b-3539-ee59" name="Light Armour" hidden="false" targetId="81fc-0bff-813c-b483" type="profile"/>
+        <infoLink id="e8bb-63e1-65f1-69f9" name="Shield" hidden="false" targetId="9860-76f4-ad49-15bb" type="profile"/>
+        <infoLink id="cdb4-5943-3e7c-52d5" name="Shieldwall" hidden="false" targetId="b5f5-8825-73ae-f1cf" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ee52-a0f8-2add-d3f5" name="Anglo-Norman" hidden="false" targetId="a4f5-7f30-a30f-47f3" primary="false"/>
+        <categoryLink id="893c-1c58-a6bc-4bc7" name="New CategoryLink" hidden="false" targetId="ecd1-f7df-d397-f942" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="7089-cb2f-6975-565b" name="English Sergeants" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="2588-e02d-3186-94dd" value="18.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b743-3447-60b0-3d8a" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c74-3bec-00d4-8180" type="min"/>
+            <constraint field="selections" scope="parent" value="32.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2588-e02d-3186-94dd" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="be20-b705-8e03-f0bc" name="English Sergeants" publicationId="20ec-fa11-b956-a9a3" page="67" hidden="false" typeId="b0ae-179f-841c-7b6a" typeName="1. Unit">
+              <characteristics>
+                <characteristic name="ORDER" typeId="15ee-a9d5-dc49-608e">Closed</characteristic>
+                <characteristic name="MR" typeId="c658-9299-8241-d18b">10</characteristic>
+                <characteristic name="SHOOT" typeId="8cb5-c4aa-5a25-14a8">4+</characteristic>
+                <characteristic name="ATTACKS" typeId="12eb-8f76-2dc7-39cb">1</characteristic>
+                <characteristic name="HTH" typeId="8b70-2a78-827d-359f">4</characteristic>
+                <characteristic name="ARM" typeId="f38d-b4f2-0682-8832">5+</characteristic>
+                <characteristic name="KILL" typeId="b18e-b1c4-c216-8928">4+</characteristic>
+                <characteristic name="HITS" typeId="8372-2180-0579-5cc1">1</characteristic>
+                <characteristic name="DL" typeId="08c7-9b20-fc1c-5f73">6</characteristic>
+                <characteristic name="ML" typeId="f143-b5d0-5cec-c2e4">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="15.0"/>
+            <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="12a3-9e8f-01a5-9f62" name="Upgrades" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="8696-9065-6e34-8a9a" name="Javelins" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="f34b-61c8-a78c-1f9e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed79-6c7a-c913-7fbd" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c0aa-2d00-3ee6-af00" name="Javelin" hidden="false" targetId="f208-4232-9ce6-abe2" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="29e0-0bbc-5c97-e1bf" name="Steady" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="3.0">
+                  <repeats>
+                    <repeat field="selections" scope="f34b-61c8-a78c-1f9e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb7f-b564-5fc1-3485" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0cbe-be01-5c56-2645" name="Steady" hidden="false" targetId="1705-62c2-9b2a-df54" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+        <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7afc-bd8c-3c4f-2fad" name="Militia" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="7afc-bd8c-3c4f-2fad" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="7afc-bd8c-3c4f-2fad" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <infoLinks>
+        <infoLink id="9c63-24da-d169-3dc1" name="Long Spear (Foot)" hidden="false" targetId="c008-6cbe-2fe2-ae55" type="profile"/>
+        <infoLink id="b872-3e56-1c98-293d" name="Hand Weapon" hidden="false" targetId="dda4-6e6a-60bc-59ea" type="profile"/>
+        <infoLink id="ea1a-879a-8fbf-49aa" name="Shield" hidden="false" targetId="9860-76f4-ad49-15bb" type="profile"/>
+        <infoLink id="0d3a-049c-6c9f-7698" name="Shieldwall" hidden="false" targetId="b5f5-8825-73ae-f1cf" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0d27-3261-b4e8-c344" name="Anglo-Norman" hidden="false" targetId="a4f5-7f30-a30f-47f3" primary="false"/>
+        <categoryLink id="c23c-b8e6-7fcf-8509" name="New CategoryLink" hidden="false" targetId="ecd1-f7df-d397-f942" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="83e1-e631-91dd-d4f9" name="Militia" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="5c40-1d19-b43d-3eba" value="24.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b743-3447-60b0-3d8a" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8062-5c20-a314-7494" type="min"/>
+            <constraint field="selections" scope="parent" value="50.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c40-1d19-b43d-3eba" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8a59-afaf-4234-4c1d" name="Militia" publicationId="20ec-fa11-b956-a9a3" page="67" hidden="false" typeId="b0ae-179f-841c-7b6a" typeName="1. Unit">
+              <characteristics>
+                <characteristic name="ORDER" typeId="15ee-a9d5-dc49-608e">Closed</characteristic>
+                <characteristic name="MR" typeId="c658-9299-8241-d18b">10</characteristic>
+                <characteristic name="SHOOT" typeId="8cb5-c4aa-5a25-14a8">4+</characteristic>
+                <characteristic name="ATTACKS" typeId="12eb-8f76-2dc7-39cb">1</characteristic>
+                <characteristic name="HTH" typeId="8b70-2a78-827d-359f">2</characteristic>
+                <characteristic name="ARM" typeId="f38d-b4f2-0682-8832">6</characteristic>
+                <characteristic name="KILL" typeId="b18e-b1c4-c216-8928">4+</characteristic>
+                <characteristic name="HITS" typeId="8372-2180-0579-5cc1">1</characteristic>
+                <characteristic name="DL" typeId="08c7-9b20-fc1c-5f73">5</characteristic>
+                <characteristic name="ML" typeId="f143-b5d0-5cec-c2e4">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="7.0"/>
+            <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+        <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c1bc-25be-ab3b-e688" name="Skirmishers" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="c1bc-25be-ab3b-e688" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="c1bc-25be-ab3b-e688" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <infoLinks>
+        <infoLink id="062d-e148-710a-e90d" name="Dagger/Improvised Weapon" hidden="false" targetId="7cad-74f9-20db-d254" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Improvised Weapon"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5290-d690-99ad-a699" name="Anglo-Norman" hidden="false" targetId="a4f5-7f30-a30f-47f3" primary="false"/>
+        <categoryLink id="6070-4328-3f94-9edd" name="New CategoryLink" hidden="false" targetId="e6a2-9a2b-35f2-7cc5" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="05d6-5650-d4db-8779" name="Skirmishers" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="3b59-8b2f-a76a-ec58" value="12.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b743-3447-60b0-3d8a" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e63-1cdd-cb11-549a" type="min"/>
+            <constraint field="selections" scope="parent" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b59-8b2f-a76a-ec58" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="504c-d258-ba46-49e3" name="Skirmishers" publicationId="20ec-fa11-b956-a9a3" page="67" hidden="false" typeId="b0ae-179f-841c-7b6a" typeName="1. Unit">
+              <modifiers>
+                <modifier type="set" field="f38d-b4f2-0682-8832" value="6">
+                  <conditions>
+                    <condition field="selections" scope="c1bc-25be-ab3b-e688" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="79b4-f2db-f984-ef48" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="c1bc-25be-ab3b-e688" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e442-4506-22c2-9e7d" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="08c7-9b20-fc1c-5f73" value="6"/>
+                    <modifier type="set" field="f143-b5d0-5cec-c2e4" value="6"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <characteristics>
+                <characteristic name="ORDER" typeId="15ee-a9d5-dc49-608e">Skirmish</characteristic>
+                <characteristic name="MR" typeId="c658-9299-8241-d18b">12</characteristic>
+                <characteristic name="SHOOT" typeId="8cb5-c4aa-5a25-14a8">4+</characteristic>
+                <characteristic name="ATTACKS" typeId="12eb-8f76-2dc7-39cb">1</characteristic>
+                <characteristic name="HTH" typeId="8b70-2a78-827d-359f">2</characteristic>
+                <characteristic name="ARM" typeId="f38d-b4f2-0682-8832">N/A</characteristic>
+                <characteristic name="KILL" typeId="b18e-b1c4-c216-8928">4+</characteristic>
+                <characteristic name="HITS" typeId="8372-2180-0579-5cc1">1</characteristic>
+                <characteristic name="DL" typeId="08c7-9b20-fc1c-5f73">5</characteristic>
+                <characteristic name="ML" typeId="f143-b5d0-5cec-c2e4">5</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="7.0"/>
+            <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0e21-80ec-22da-2207" name="Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="e1d1-1ce0-8524-ce72">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f9e-b4cd-83ab-7b79" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89c1-8da4-2b5c-bf49" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e1d1-1ce0-8524-ce72" name="Javelins" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d3c-54e4-f16e-dfdc" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ba62-1f27-c1a9-ba21" name="Javelin" hidden="false" targetId="f208-4232-9ce6-abe2" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="afba-4526-ced9-245d" name="Slings" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e54-4c1b-d8ae-bd49" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="e7f0-ac03-a7d0-4ecd" name="Sling" hidden="false" targetId="d3b8-7423-8b12-d34a" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e442-4506-22c2-9e7d" name="Composite Bows" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="2.0">
+                  <repeats>
+                    <repeat field="selections" scope="c1bc-25be-ab3b-e688" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a887-f43b-dd3c-3fa4" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d940-b90c-f79b-2f33" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a6a7-acab-703b-6be9" name="Bow, Composite" hidden="false" targetId="f8fc-8cab-0ffb-6bde" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b163-0a91-950f-c2b8" name="Upgrades" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="79b4-f2db-f984-ef48" name="Bucklers and Hand Weapons" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="c1bc-25be-ab3b-e688" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ce3-4894-883c-4754" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="26f5-1de9-1143-6d31" name="Buckler" hidden="false" targetId="982d-8260-0b24-a991" type="profile"/>
+                <infoLink id="c3e1-c29e-cff4-2919" name="Hand Weapon" hidden="false" targetId="dda4-6e6a-60bc-59ea" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+        <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6759-a224-d840-3451" name="Allies Options" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="17ad-4ff8-b644-e323" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1821-b312-7948-b105" name="New CategoryLink" hidden="false" targetId="2475-8e0d-fc70-f2da" primary="true"/>
+        <categoryLink id="bb13-3030-d53b-8dee" name="Anglo-Norman" hidden="false" targetId="a4f5-7f30-a30f-47f3" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="36a9-94d8-f0c0-f4bc" name="Allies Options" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06be-ca1e-a232-7e3d" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0e0b-02a8-9de8-4759" name="Gwynedd" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b26-670f-5013-3626" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="23be-ddde-5d25-1ba1" name="Welsh" hidden="false" targetId="69f1-3dc7-d34f-d3d7" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="b7a3-85e6-f97f-abba" name="Gwynedd" hidden="false" collective="false" import="true" targetId="bbb5-4e45-3950-f445" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69ca-8996-148f-02c9" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ec40-57bb-6a18-8e5e" name="Irish" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f62-2a8b-6cbb-df7f" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="ad43-cbed-c01f-4715" name="Irish (Hiberno-Norse)" hidden="false" targetId="3bbe-9d85-4edd-f424" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="e2d7-8c86-d671-bf32" name="Province" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a60-1388-da41-3a3c" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b70-ab9b-0e2a-7f19" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="019c-1885-2ed4-2b1b" name="Connacht" hidden="false" collective="false" import="true" targetId="843a-d44c-105c-f40a" type="selectionEntry"/>
+                    <entryLink id="fa44-3594-22c5-efe8" name="Leinster" hidden="false" collective="false" import="true" targetId="9654-6349-c84c-c5bd" type="selectionEntry"/>
+                    <entryLink id="e199-d510-a7ea-94b3" name="Munster" hidden="false" collective="false" import="true" targetId="b6b4-9582-9ff4-889f" type="selectionEntry"/>
+                    <entryLink id="66fd-08de-2f3e-df90" name="Ulster" hidden="false" collective="false" import="true" targetId="5dbe-036e-20d7-2685" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+        <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <catalogueLinks>
+    <catalogueLink id="9a3c-74a1-3b5a-b9bf" name="Irish (Hiberno-Norse) Allies" targetId="f2c3-5176-523b-8bad" type="catalogue" importRootEntries="false"/>
+    <catalogueLink id="654e-379d-0a0b-3a52" name="Welsh Allies" targetId="1347-cb3a-1dc7-2a4c" type="catalogue" importRootEntries="false"/>
+  </catalogueLinks>
+</catalogue>

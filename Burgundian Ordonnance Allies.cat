@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="c4bf-847a-c134-ab62" name="Burgundian Ordonnance Allies" revision="3" battleScribeVersion="2.03" authorName="Jono Firth" library="true" gameSystemId="c749-87c2-0d4a-5e29" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="e66a-e5ac-8a3d-fa8c" name="Burgundian Ordonnance" hidden="false"/>
+  </categoryEntries>
+  <entryLinks>
+    <entryLink id="5dc5-b875-260d-7050" name="Conducteur" hidden="false" collective="false" import="true" targetId="a2e3-0f1a-f83c-5512" type="selectionEntry"/>
+    <entryLink id="fb8b-8c39-bbd0-df6d" name="Ordonnance Longbowmen" hidden="false" collective="false" import="true" targetId="eb62-0755-37c6-02bb" type="selectionEntry"/>
+    <entryLink id="efe8-6916-1516-acf4" name="Ordonnance Pikemen" hidden="false" collective="false" import="true" targetId="072c-9aea-9312-3d55" type="selectionEntry"/>
+    <entryLink id="fdd6-02b4-25f6-b242" name="Ordonnance Men-at-arms" hidden="false" collective="false" import="true" targetId="c751-1d9c-6791-bdda" type="selectionEntry"/>
+    <entryLink id="8d46-9c18-7349-ea29" name="Coustiliers" hidden="false" collective="false" import="true" targetId="f196-9273-2524-0fdc" type="selectionEntry"/>
+    <entryLink id="4cb2-3afa-257f-0775" name="Culvineers" hidden="false" collective="false" import="true" targetId="e02e-9fdc-af58-1180" type="selectionEntry"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="a2e3-0f1a-f83c-5512" name="Conducteur" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dbe-7810-8988-fd40" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="d322-5d76-895d-90d8" name="Conducteur" hidden="false" typeId="36c8-86fe-73b0-e291" typeName="Commander">
+          <modifiers>
+            <modifier type="set" field="bc36-a6fe-45e8-c852" value="Mounted;">
+              <conditions>
+                <condition field="selections" scope="a2e3-0f1a-f83c-5512" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a26b-0841-b6a7-ee1a" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="cb02-354e-b90e-0e66" value="7 +0">
+                  <conditions>
+                    <condition field="selections" scope="a2e3-0f1a-f83c-5512" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="02f6-0209-effa-8c94" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="cb02-354e-b90e-0e66" value="9 +2">
+                  <conditions>
+                    <condition field="selections" scope="a2e3-0f1a-f83c-5512" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8101-9e3c-7564-114a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="6485-383d-d616-b0c9" value="+2">
+                  <conditions>
+                    <condition field="selections" scope="a2e3-0f1a-f83c-5512" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2c5-7d2e-0d9c-b27b" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <characteristics>
+            <characteristic name="DL" typeId="cb02-354e-b90e-0e66">8 +1</characteristic>
+            <characteristic name="ML" typeId="6435-2008-46e4-0b56">8 +1</characteristic>
+            <characteristic name="ATTACKS" typeId="6485-383d-d616-b0c9">+1</characteristic>
+            <characteristic name="Notes &amp; Traits" typeId="bc36-a6fe-45e8-c852"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b411-a373-492c-4272" name="Allies" hidden="false" targetId="b0d6-1bb7-0340-2b85" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1c25-fba0-e524-57d5" name="New CategoryLink" hidden="false" targetId="2475-8e0d-fc70-f2da" primary="true"/>
+        <categoryLink id="2261-d96f-c83f-d92e" name="Burgundian Ordonnance" hidden="false" targetId="e66a-e5ac-8a3d-fa8c" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b808-92c6-2650-e5dc" name="Upgrades" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="a26b-0841-b6a7-ee1a" name="Horse" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40c8-e940-6c93-0fd1" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="10.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3754-6ac3-ed29-cae4" name="Sub-commander Traits" hidden="false" collective="false" import="true" targetId="5646-99f8-2fe1-b5f5" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="55.0"/>
+        <cost name="vp" typeId="506b-6131-c00a-3959" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="eb62-0755-37c6-02bb" name="Ordonnance Longbowmen" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="eb62-0755-37c6-02bb" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="eb62-0755-37c6-02bb" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fb6-e155-b3ce-8ee3" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="8bf1-5c6a-adc2-9f6c" name="Ordonnance Longbowmen" hidden="false">
+          <description>Expert Archers and Support Archers may not be used together.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="0b7e-125c-ebe4-60e9" name="Bow, Long" hidden="false" targetId="ad2b-223c-0595-3be5" type="profile"/>
+        <infoLink id="ee09-677c-6e7f-0fc3" name="Hand Weapons" hidden="false" targetId="dda4-6e6a-60bc-59ea" type="profile"/>
+        <infoLink id="b8aa-6503-4f24-7bf2" name="Heavy Armour" hidden="false" targetId="a32c-1fe1-2c0d-91ae" type="profile"/>
+        <infoLink id="4a61-adbd-4c10-e914" name="Expert Archers" hidden="false" targetId="70a0-3115-9d7a-fb90" type="rule"/>
+        <infoLink id="0da4-1e13-b8b2-c96a" name="Support Archers" hidden="false" targetId="a163-47e5-f5b2-ad65" type="rule"/>
+        <infoLink id="1c5c-a575-426a-afaa" name="Allies" hidden="false" targetId="b0d6-1bb7-0340-2b85" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="30b8-b4a9-6ac9-fc20" name="New CategoryLink" hidden="false" targetId="2475-8e0d-fc70-f2da" primary="true"/>
+        <categoryLink id="3226-d494-0c2f-b267" name="Burgundian Ordonnance" hidden="false" targetId="e66a-e5ac-8a3d-fa8c" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="92ed-2a6b-a992-9a77" name="Ordonnance Longbowmen" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a253-f927-e9dc-c82c" type="min"/>
+            <constraint field="selections" scope="parent" value="24.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0942-9f81-92a4-4722" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="37d6-2b04-c0af-a271" name="Ordonnance Longbowmen" hidden="false" typeId="b0ae-179f-841c-7b6a" typeName="1. Unit">
+              <characteristics>
+                <characteristic name="ORDER" typeId="15ee-a9d5-dc49-608e">Open</characteristic>
+                <characteristic name="MR" typeId="c658-9299-8241-d18b">10</characteristic>
+                <characteristic name="SHOOT" typeId="8cb5-c4aa-5a25-14a8">4+</characteristic>
+                <characteristic name="ATTACKS" typeId="12eb-8f76-2dc7-39cb">1</characteristic>
+                <characteristic name="HTH" typeId="8b70-2a78-827d-359f">3</characteristic>
+                <characteristic name="ARM" typeId="f38d-b4f2-0682-8832">5+</characteristic>
+                <characteristic name="KILL" typeId="b18e-b1c4-c216-8928">4+</characteristic>
+                <characteristic name="HITS" typeId="8372-2180-0579-5cc1">1</characteristic>
+                <characteristic name="DL" typeId="08c7-9b20-fc1c-5f73">7</characteristic>
+                <characteristic name="ML" typeId="f143-b5d0-5cec-c2e4">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="17.0"/>
+            <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="88d0-3403-e672-16d6" name="Upgrades" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="855f-5316-6fcf-de59" name="Mounted Infantry" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="eb62-0755-37c6-02bb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7f6-058d-1b53-7a06" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="e527-bf72-94a6-2700" name="Mounted Infantry" hidden="false" targetId="f2fe-d575-24a0-5d31" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+        <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="072c-9aea-9312-3d55" name="Ordonnance Pikemen" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="072c-9aea-9312-3d55" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="072c-9aea-9312-3d55" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4884-be06-47d1-7bde" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="8048-11d6-bf91-a5c9" name="Pike/Sarissa" hidden="false" targetId="88c4-a913-874b-5383" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Pike"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="22e5-3e29-bda4-b7dc" name="Hand Weapons" hidden="false" targetId="dda4-6e6a-60bc-59ea" type="profile"/>
+        <infoLink id="1f75-89b6-202d-ee86" name="Heavy Armour" hidden="false" targetId="a32c-1fe1-2c0d-91ae" type="profile"/>
+        <infoLink id="3c93-345f-b4f4-e9ea" name="Buckler" hidden="false" targetId="982d-8260-0b24-a991" type="profile"/>
+        <infoLink id="1c43-f4fc-4fb0-72ce" name="Phalanx (Medieval)" hidden="false" targetId="040e-a9e6-e365-59b2" type="infoGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="072c-9aea-9312-3d55" value="16.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c106-f270-a839-2018" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="80d8-5f1c-8cad-8e74" name="Mixed Formation" hidden="false" targetId="f003-03eb-dd78-f765" type="rule"/>
+        <infoLink id="f5bb-6cea-b45d-41c6" name="Allies" hidden="false" targetId="b0d6-1bb7-0340-2b85" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="daca-fd92-1775-19de" name="New CategoryLink" hidden="false" targetId="2475-8e0d-fc70-f2da" primary="true"/>
+        <categoryLink id="7da6-d9af-0d36-697f" name="Burgundian Ordonnance" hidden="false" targetId="e66a-e5ac-8a3d-fa8c" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9ced-cd8b-0f2f-47b9" name="Models" hidden="false" collective="false" import="true" defaultSelectionEntryId="c106-f270-a839-2018">
+          <constraints>
+            <constraint field="selections" scope="parent" value="16.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58b2-638e-5529-2f85" type="min"/>
+            <constraint field="selections" scope="parent" value="32.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6126-77a5-873c-d845" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c106-f270-a839-2018" name="Ordonnance Pikemen" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="feaa-bd77-774e-b638" name="Ordonnance Pikemen" hidden="false" typeId="b0ae-179f-841c-7b6a" typeName="1. Unit">
+                  <characteristics>
+                    <characteristic name="ORDER" typeId="15ee-a9d5-dc49-608e">Closed</characteristic>
+                    <characteristic name="MR" typeId="c658-9299-8241-d18b">10</characteristic>
+                    <characteristic name="SHOOT" typeId="8cb5-c4aa-5a25-14a8">4+</characteristic>
+                    <characteristic name="ATTACKS" typeId="12eb-8f76-2dc7-39cb">1</characteristic>
+                    <characteristic name="HTH" typeId="8b70-2a78-827d-359f">3</characteristic>
+                    <characteristic name="ARM" typeId="f38d-b4f2-0682-8832">4+</characteristic>
+                    <characteristic name="KILL" typeId="b18e-b1c4-c216-8928">4+</characteristic>
+                    <characteristic name="HITS" typeId="8372-2180-0579-5cc1">1</characteristic>
+                    <characteristic name="DL" typeId="08c7-9b20-fc1c-5f73">7</characteristic>
+                    <characteristic name="ML" typeId="f143-b5d0-5cec-c2e4">3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="17.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b3a3-f11d-b529-7272" name="Ordonnance Longbowmen" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="increment" field="4eb4-204c-2863-fd01" value="3.0">
+                  <repeats>
+                    <repeat field="selections" scope="072c-9aea-9312-3d55" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4eb4-204c-2863-fd01" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="c651-3ad9-2f68-6a9a" name="Ordonnance Longbowmen" hidden="false" typeId="b0ae-179f-841c-7b6a" typeName="1. Unit">
+                  <characteristics>
+                    <characteristic name="ORDER" typeId="15ee-a9d5-dc49-608e">Open</characteristic>
+                    <characteristic name="MR" typeId="c658-9299-8241-d18b">10</characteristic>
+                    <characteristic name="SHOOT" typeId="8cb5-c4aa-5a25-14a8">4+</characteristic>
+                    <characteristic name="ATTACKS" typeId="12eb-8f76-2dc7-39cb">1</characteristic>
+                    <characteristic name="HTH" typeId="8b70-2a78-827d-359f">3</characteristic>
+                    <characteristic name="ARM" typeId="f38d-b4f2-0682-8832">5+</characteristic>
+                    <characteristic name="KILL" typeId="b18e-b1c4-c216-8928">4+</characteristic>
+                    <characteristic name="HITS" typeId="8372-2180-0579-5cc1">1</characteristic>
+                    <characteristic name="DL" typeId="08c7-9b20-fc1c-5f73">7</characteristic>
+                    <characteristic name="ML" typeId="f143-b5d0-5cec-c2e4">7</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="edfa-db41-c520-a7af" name="Ordonnance Longbowmen" hidden="false">
+                  <description>Expert Archers and Support Archers may not be used together.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="dbe6-7442-b628-db14" name="Bow, Long" hidden="false" targetId="ad2b-223c-0595-3be5" type="profile"/>
+                <infoLink id="6b3c-0ad9-76ba-2e47" name="Expert Archers" hidden="false" targetId="70a0-3115-9d7a-fb90" type="rule"/>
+                <infoLink id="e271-793f-eb3e-25b4" name="Support Archers" hidden="false" targetId="a163-47e5-f5b2-ad65" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="17.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+        <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c751-1d9c-6791-bdda" name="Ordonnance Men-at-arms" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2e3-0f1a-f83c-5512" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="c751-1d9c-6791-bdda" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="c751-1d9c-6791-bdda" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ccd-cc27-0def-8a36" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="74ca-3939-c49b-2de6" name="Mixed Formation" hidden="false" targetId="f003-03eb-dd78-f765" type="rule"/>
+        <infoLink id="0170-e06c-109d-dfa3" name="Allies" hidden="false" targetId="b0d6-1bb7-0340-2b85" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a3bd-c4dc-a6bc-ca06" name="New CategoryLink" hidden="false" targetId="2475-8e0d-fc70-f2da" primary="true"/>
+        <categoryLink id="78c3-ada7-0082-5999" name="Burgundian Ordonnance" hidden="false" targetId="e66a-e5ac-8a3d-fa8c" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1c93-b0db-e0aa-3cd6" name="Upgrades" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="0a27-8897-3c5d-0de6" name="Full Metal Barding (Men at Arms)" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="4.0">
+                  <repeats>
+                    <repeat field="selections" scope="c751-1d9c-6791-bdda" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dad4-cbf9-a622-d915" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bb6-c77e-7350-3565" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="6953-fa15-b08b-111f" name="Full Barding, Metal" hidden="false" targetId="02f7-4903-61eb-c4db" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1a85-8719-0fb6-7c24" name="Partial Plate (Coustiliers)" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="3.0">
+                  <repeats>
+                    <repeat field="selections" scope="c751-1d9c-6791-bdda" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20ff-0d4c-5a2c-fefb" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53e6-8082-0db6-6853" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a910-0f33-b140-b837" name="Super Heavy Armour/Partial Plate" hidden="false" targetId="f927-7ed7-fe99-ddbb" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Partial Plate"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="ec15-8027-945c-8882" name="Models" hidden="false" collective="false" import="true" defaultSelectionEntryId="dad4-cbf9-a622-d915">
+          <constraints>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b27-04e2-c5f0-0816" type="min"/>
+            <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2dcd-9011-4021-838f" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="dad4-cbf9-a622-d915" name="Ordonnance Men-at-arms" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="fdf8-2eb6-23c2-26d3" name="Ordonnance Men-at-arms" hidden="false" typeId="b0ae-179f-841c-7b6a" typeName="1. Unit">
+                  <modifierGroups>
+                    <modifierGroup>
+                      <conditions>
+                        <condition field="selections" scope="c751-1d9c-6791-bdda" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a27-8897-3c5d-0de6" type="equalTo"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" field="c658-9299-8241-d18b" value="18"/>
+                        <modifier type="set" field="f38d-b4f2-0682-8832" value="2+"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                  <characteristics>
+                    <characteristic name="ORDER" typeId="15ee-a9d5-dc49-608e">Open</characteristic>
+                    <characteristic name="MR" typeId="c658-9299-8241-d18b">20</characteristic>
+                    <characteristic name="SHOOT" typeId="8cb5-c4aa-5a25-14a8">4+</characteristic>
+                    <characteristic name="ATTACKS" typeId="12eb-8f76-2dc7-39cb">1</characteristic>
+                    <characteristic name="HTH" typeId="8b70-2a78-827d-359f">4</characteristic>
+                    <characteristic name="ARM" typeId="f38d-b4f2-0682-8832">3+</characteristic>
+                    <characteristic name="KILL" typeId="b18e-b1c4-c216-8928">4+</characteristic>
+                    <characteristic name="HITS" typeId="8372-2180-0579-5cc1">1</characteristic>
+                    <characteristic name="DL" typeId="08c7-9b20-fc1c-5f73">8</characteristic>
+                    <characteristic name="ML" typeId="f143-b5d0-5cec-c2e4">8</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="2cf5-d67f-f2ed-abfe" name="Full Plate" hidden="false" targetId="620d-0b70-67cd-f587" type="profile"/>
+                <infoLink id="96c8-5e65-db79-7c97" name="Hand Weapons" hidden="false" targetId="dda4-6e6a-60bc-59ea" type="profile"/>
+                <infoLink id="8ff3-efa5-ca9b-264a" name="Lance" hidden="false" targetId="c699-4cc5-e5ee-61a8" type="profile"/>
+                <infoLink id="fbef-f22c-cdf9-652d" name="Shock Cavalry" hidden="false" targetId="7a38-a60f-b343-812a" type="rule"/>
+                <infoLink id="93bc-070a-1b7a-481b" name="Fearsome" hidden="false" targetId="745c-e091-befd-e7e5" type="rule"/>
+                <infoLink id="5da6-24e4-6e68-a321" name="Warhorses" hidden="false" targetId="096e-064f-a46d-36d7" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="47.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="20ff-0d4c-5a2c-fefb" name="Coustiliers" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="increment" field="de39-56b9-7170-3dc5" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="c751-1d9c-6791-bdda" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de39-56b9-7170-3dc5" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="7c21-efdc-69c1-7e81" name="Coustiliers" hidden="false" typeId="b0ae-179f-841c-7b6a" typeName="1. Unit">
+                  <modifierGroups>
+                    <modifierGroup>
+                      <conditions>
+                        <condition field="selections" scope="c751-1d9c-6791-bdda" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a85-8719-0fb6-7c24" type="equalTo"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" field="f38d-b4f2-0682-8832" value="3+"/>
+                        <modifier type="set" field="c658-9299-8241-d18b" value="18"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                  <characteristics>
+                    <characteristic name="ORDER" typeId="15ee-a9d5-dc49-608e">Open</characteristic>
+                    <characteristic name="MR" typeId="c658-9299-8241-d18b">20</characteristic>
+                    <characteristic name="SHOOT" typeId="8cb5-c4aa-5a25-14a8">4+</characteristic>
+                    <characteristic name="ATTACKS" typeId="12eb-8f76-2dc7-39cb">1</characteristic>
+                    <characteristic name="HTH" typeId="8b70-2a78-827d-359f">3</characteristic>
+                    <characteristic name="ARM" typeId="f38d-b4f2-0682-8832">4+</characteristic>
+                    <characteristic name="KILL" typeId="b18e-b1c4-c216-8928">4+</characteristic>
+                    <characteristic name="HITS" typeId="8372-2180-0579-5cc1">1</characteristic>
+                    <characteristic name="DL" typeId="08c7-9b20-fc1c-5f73">7</characteristic>
+                    <characteristic name="ML" typeId="f143-b5d0-5cec-c2e4">7</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="afab-843c-e4ba-baf1" name="Long Spear (Mounted)" hidden="false" targetId="fcc2-904c-a694-d181" type="profile"/>
+                <infoLink id="4b7f-cff4-efd5-b7ef" name="Hand Weapons" hidden="false" targetId="dda4-6e6a-60bc-59ea" type="profile"/>
+                <infoLink id="6966-5700-102d-27e3" name="Heavy Armour" hidden="false" targetId="a32c-1fe1-2c0d-91ae" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="c751-1d9c-6791-bdda" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a85-8719-0fb6-7c24" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="6fd3-4c77-474d-03e4" name="Shock Cavalry" hidden="false" targetId="7a38-a60f-b343-812a" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="28.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+        <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f196-9273-2524-0fdc" name="Coustiliers" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="f196-9273-2524-0fdc" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="f196-9273-2524-0fdc" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd7e-9c17-af9f-6677" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="2a55-6a91-8cd6-a295" name="Heavy Armour" hidden="false" targetId="a32c-1fe1-2c0d-91ae" type="profile">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="f196-9273-2524-0fdc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f29f-cbd4-ab75-548c" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="9e84-7127-7eb6-0859" name="Hand Weapon" hidden="false" targetId="dda4-6e6a-60bc-59ea" type="profile"/>
+        <infoLink id="58d5-d2a5-50e8-c780" name="Long Spear (Mounted)" hidden="false" targetId="fcc2-904c-a694-d181" type="profile"/>
+        <infoLink id="b09f-cf97-af87-4e94" name="Shock Cavalry" hidden="false" targetId="7a38-a60f-b343-812a" type="rule"/>
+        <infoLink id="cc9d-2ea5-3645-325a" name="Allies" hidden="false" targetId="b0d6-1bb7-0340-2b85" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c6f1-0877-974d-f78c" name="New CategoryLink" hidden="false" targetId="2475-8e0d-fc70-f2da" primary="true"/>
+        <categoryLink id="f2f6-0889-cc10-7645" name="Burgundian Ordonnance" hidden="false" targetId="e66a-e5ac-8a3d-fa8c" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5c0b-125d-3ee1-45fc" name="Coustiliers" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3ab-de80-1c5b-e145" type="min"/>
+            <constraint field="selections" scope="parent" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdbc-50cb-5a6e-aa07" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="69f4-f3f1-d1f0-4c7e" name="Coustiliers" hidden="false" typeId="b0ae-179f-841c-7b6a" typeName="1. Unit">
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="f196-9273-2524-0fdc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f29f-cbd4-ab75-548c" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="f38d-b4f2-0682-8832" value="3+"/>
+                    <modifier type="set" field="c658-9299-8241-d18b" value="18"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <characteristics>
+                <characteristic name="ORDER" typeId="15ee-a9d5-dc49-608e">Open</characteristic>
+                <characteristic name="MR" typeId="c658-9299-8241-d18b">20</characteristic>
+                <characteristic name="SHOOT" typeId="8cb5-c4aa-5a25-14a8">4+</characteristic>
+                <characteristic name="ATTACKS" typeId="12eb-8f76-2dc7-39cb">1</characteristic>
+                <characteristic name="HTH" typeId="8b70-2a78-827d-359f">3</characteristic>
+                <characteristic name="ARM" typeId="f38d-b4f2-0682-8832">4+</characteristic>
+                <characteristic name="KILL" typeId="b18e-b1c4-c216-8928">4+</characteristic>
+                <characteristic name="HITS" typeId="8372-2180-0579-5cc1">1</characteristic>
+                <characteristic name="DL" typeId="08c7-9b20-fc1c-5f73">7</characteristic>
+                <characteristic name="ML" typeId="f143-b5d0-5cec-c2e4">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="28.0"/>
+            <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e7d6-1274-3ec1-dc0f" name="Upgrades" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="f29f-cbd4-ab75-548c" name="Partial Plate" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="3.0">
+                  <repeats>
+                    <repeat field="selections" scope="f196-9273-2524-0fdc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93d8-c976-bbfc-267c" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="cc36-4e11-3098-fc40" name="Super Heavy Armour/Partial Plate" hidden="false" targetId="f927-7ed7-fe99-ddbb" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Partial Plate"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+                <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+        <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e02e-9fdc-af58-1180" name="Culvineers" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e66a-e5ac-8a3d-fa8c" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="e02e-9fdc-af58-1180" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="e02e-9fdc-af58-1180" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3cd-935f-99ab-757a" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="436e-21fa-8887-13f1" name="Handgun" hidden="false" targetId="bc8e-9a3a-7195-f574" type="profile"/>
+        <infoLink id="3ccd-669d-f56c-0ffe" name="Hand Weapons" hidden="false" targetId="dda4-6e6a-60bc-59ea" type="profile"/>
+        <infoLink id="2174-7442-32c6-43e0" name="Light Armour" hidden="false" targetId="81fc-0bff-813c-b483" type="profile"/>
+        <infoLink id="cb50-2913-2620-5516" name="Allies" hidden="false" targetId="b0d6-1bb7-0340-2b85" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ec2d-6a7e-9d2d-b83c" name="New CategoryLink" hidden="false" targetId="2475-8e0d-fc70-f2da" primary="true"/>
+        <categoryLink id="96c0-fefa-9bf1-a3da" name="Burgundian Ordonnance" hidden="false" targetId="e66a-e5ac-8a3d-fa8c" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1e86-ccb5-40e8-0bd2" name="Culvineers" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1ee-60f4-fabf-c847" type="min"/>
+            <constraint field="selections" scope="parent" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16fa-5efd-db1c-d7db" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="edc0-b716-7557-45c9" name="Culvineers" hidden="false" typeId="b0ae-179f-841c-7b6a" typeName="1. Unit">
+              <characteristics>
+                <characteristic name="ORDER" typeId="15ee-a9d5-dc49-608e">Skirmish</characteristic>
+                <characteristic name="MR" typeId="c658-9299-8241-d18b">12</characteristic>
+                <characteristic name="SHOOT" typeId="8cb5-c4aa-5a25-14a8">4+</characteristic>
+                <characteristic name="ATTACKS" typeId="12eb-8f76-2dc7-39cb">1</characteristic>
+                <characteristic name="HTH" typeId="8b70-2a78-827d-359f">3</characteristic>
+                <characteristic name="ARM" typeId="f38d-b4f2-0682-8832">6</characteristic>
+                <characteristic name="KILL" typeId="b18e-b1c4-c216-8928">4+</characteristic>
+                <characteristic name="HITS" typeId="8372-2180-0579-5cc1">1</characteristic>
+                <characteristic name="DL" typeId="08c7-9b20-fc1c-5f73">6</characteristic>
+                <characteristic name="ML" typeId="f143-b5d0-5cec-c2e4">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="12.0"/>
+            <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="0.0"/>
+        <cost name="vp" typeId="506b-6131-c00a-3959" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
