@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="7127-7c29-7dab-5c08" name="Georgian Allies" revision="1" battleScribeVersion="2.03" authorName="Jono Firth" library="true" gameSystemId="c749-87c2-0d4a-5e29" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="b820-5c44-046e-e4a2" name="Georgian" hidden="false"/>
+  </categoryEntries>
+  <entryLinks>
+    <entryLink id="4970-9013-49ac-34d1" name="Thavadi" hidden="false" collective="false" import="true" targetId="c5aa-d60c-0765-eee2" type="selectionEntry"/>
+    <entryLink id="61c7-1917-fe7d-6422" name="Monaspa Foot" hidden="false" collective="false" import="true" targetId="b30a-9e5e-f75a-f027" type="selectionEntry"/>
+    <entryLink id="ef27-6a05-b19b-6a33" name="Monaspa Horse" hidden="false" collective="false" import="true" targetId="bf66-df47-524f-2146" type="selectionEntry"/>
+    <entryLink id="54ff-7563-368c-042a" name="Monaspa Archers" hidden="false" collective="false" import="true" targetId="7ed1-9252-c288-2003" type="selectionEntry"/>
+    <entryLink id="b0d5-1933-2701-31de" name="Kipchaks" hidden="false" collective="false" import="true" targetId="2699-49d7-542d-3192" type="selectionEntry"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="c5aa-d60c-0765-eee2" name="Thavadi" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3d3-876e-dae2-7a30" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="caad-2185-b47f-fa56" name="Thavadi" publicationId="f213-af5e-b0b4-d9e9" page="131" hidden="false" typeId="36c8-86fe-73b0-e291" typeName="Commander">
+          <modifiers>
+            <modifier type="append" field="bc36-a6fe-45e8-c852" value=" Mounted;">
+              <conditions>
+                <condition field="selections" scope="c5aa-d60c-0765-eee2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1da8-cba9-ac6d-f314" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="cb02-354e-b90e-0e66" value="7 +0">
+              <conditions>
+                <condition field="selections" scope="c5aa-d60c-0765-eee2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="483b-df1c-0474-db54" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="DL" typeId="cb02-354e-b90e-0e66">8 +1</characteristic>
+            <characteristic name="ML" typeId="6435-2008-46e4-0b56">8 +1</characteristic>
+            <characteristic name="ATTACKS" typeId="6485-383d-d616-b0c9">+2</characteristic>
+            <characteristic name="Notes &amp; Traits" typeId="bc36-a6fe-45e8-c852">Heroic Leader;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d3ce-f55d-6b3d-a7d5" name="Allies" hidden="false" targetId="b0d6-1bb7-0340-2b85" type="rule"/>
+        <infoLink id="6640-88b2-da0d-e339" name="3. Heroic Leader" hidden="false" targetId="bb1e-f53f-e3ea-91da" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c7c7-9eee-05eb-7927" name="New CategoryLink" hidden="false" targetId="2475-8e0d-fc70-f2da" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="106b-6a61-9947-34aa" name="Upgrades" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="1da8-cba9-ac6d-f314" name="Horse" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f94-eb66-d792-88fa" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="bcf6-4967-a8db-ba24" name="Byzantine/Armenian/Novgorod Sub-commander Traits" hidden="false" collective="false" import="true" targetId="0703-c57a-3a30-93bb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="vp" typeId="506b-6131-c00a-3959" value="10.0"/>
+        <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="55.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b30a-9e5e-f75a-f027" name="Monaspa Foot" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="2c1f-c04a-01cc-2e0f" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b820-5c44-046e-e4a2" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="name" value="Tadzreuli Foot">
+          <conditions>
+            <condition field="selections" scope="b30a-9e5e-f75a-f027" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b3e-a913-d43a-ad58" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="b30a-9e5e-f75a-f027" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="b30a-9e5e-f75a-f027" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c1f-c04a-01cc-2e0f" type="min"/>
+        <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6856-4d5c-b34e-c24c" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="bf4b-4ac2-1e02-6d77" name="Long Spear (Foot)" hidden="false" targetId="c008-6cbe-2fe2-ae55" type="profile"/>
+        <infoLink id="e5c3-bbd4-4a8c-0647" name="Hand Weapon" hidden="false" targetId="dda4-6e6a-60bc-59ea" type="profile"/>
+        <infoLink id="e49a-2d90-0006-5403" name="Shield" hidden="false" targetId="9860-76f4-ad49-15bb" type="profile"/>
+        <infoLink id="df86-fb8e-e272-763f" name="Allies" hidden="false" targetId="b0d6-1bb7-0340-2b85" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3239-eee3-082d-4ee9" name="New CategoryLink" hidden="false" targetId="2475-8e0d-fc70-f2da" primary="true"/>
+        <categoryLink id="eb3b-944e-86f0-eadb" name="Georgian" hidden="false" targetId="b820-5c44-046e-e4a2" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="154a-d0af-6271-b85d" name="Monaspa Foot" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="name" value="Tadzreuli Foot">
+              <conditions>
+                <condition field="selections" scope="b30a-9e5e-f75a-f027" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b3e-a913-d43a-ad58" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fe4-4b5a-2521-a8c3" type="min"/>
+            <constraint field="selections" scope="parent" value="40.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0074-a197-65e9-2e10" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6dca-c4a3-c31f-d2ef" name="Monaspa Foot" publicationId="f213-af5e-b0b4-d9e9" page="131" hidden="false" typeId="b0ae-179f-841c-7b6a" typeName="1. Unit">
+              <modifiers>
+                <modifier type="set" field="15ee-a9d5-dc49-608e" value="Open">
+                  <conditions>
+                    <condition field="selections" scope="b30a-9e5e-f75a-f027" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b58-f859-2384-33b1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="b30a-9e5e-f75a-f027" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b3e-a913-d43a-ad58" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="08c7-9b20-fc1c-5f73" value="7"/>
+                    <modifier type="set" field="f38d-b4f2-0682-8832" value="4+"/>
+                    <modifier type="set" field="name" value="Tadzreuli Foot"/>
+                    <modifier type="set" field="f143-b5d0-5cec-c2e4" value="7"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <characteristics>
+                <characteristic name="ORDER" typeId="15ee-a9d5-dc49-608e">Closed</characteristic>
+                <characteristic name="MR" typeId="c658-9299-8241-d18b">10</characteristic>
+                <characteristic name="SHOOT" typeId="8cb5-c4aa-5a25-14a8">4+</characteristic>
+                <characteristic name="ATTACKS" typeId="12eb-8f76-2dc7-39cb">1</characteristic>
+                <characteristic name="HTH" typeId="8b70-2a78-827d-359f">3</characteristic>
+                <characteristic name="ARM" typeId="f38d-b4f2-0682-8832">6</characteristic>
+                <characteristic name="KILL" typeId="b18e-b1c4-c216-8928">4+</characteristic>
+                <characteristic name="HITS" typeId="8372-2180-0579-5cc1">1</characteristic>
+                <characteristic name="DL" typeId="08c7-9b20-fc1c-5f73">6</characteristic>
+                <characteristic name="ML" typeId="f143-b5d0-5cec-c2e4">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="8.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0a89-1d2b-1b44-242a" name="Order" hidden="false" collective="false" import="true" defaultSelectionEntryId="34f6-7b49-65ec-a626">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5a7-4777-6826-bb9a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d6b-63a0-232c-3ff8" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="34f6-7b49-65ec-a626" name="Closed" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5666-41f9-d9ca-b1fa" type="max"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry id="8b58-f859-2384-33b1" name="Open" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="494c-cad9-9d17-6457" type="max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="fc24-530a-19e6-dd89" name="Upgrades" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="cb33-d4d9-1b46-a43b" name="Javelins" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="b30a-9e5e-f75a-f027" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="406f-82ef-64bb-1f5b" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d3a0-cbb5-b02a-52d3" name="Javelin" hidden="false" targetId="f208-4232-9ce6-abe2" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="6651-546c-6cc8-fa78" name="Shieldwall" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="b30a-9e5e-f75a-f027" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f98-e9c6-4c9b-93cd" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0528-82fd-08a9-4736" name="Shieldwall" hidden="false" targetId="b5f5-8825-73ae-f1cf" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="9b3e-a913-d43a-ad58" name="Tadzreuli" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="10.0">
+                  <repeats>
+                    <repeat field="selections" scope="b30a-9e5e-f75a-f027" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b30a-9e5e-f75a-f027" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c55-2a0b-75c5-3456" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8e4c-0bb6-a455-64e5" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="b4e4-47dc-ab98-2881" name="Heavy Armour" hidden="false" targetId="a32c-1fe1-2c0d-91ae" type="profile"/>
+                <infoLink id="19b7-3119-fd44-fe3e" name="Drilled" hidden="false" targetId="d67d-1574-c36f-601e" type="rule"/>
+                <infoLink id="ef2a-4097-1389-e671" name="Steady" hidden="false" targetId="1705-62c2-9b2a-df54" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="bf66-df47-524f-2146" name="Monaspa Horse" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="name" value="Tadzreuli Horse">
+          <conditions>
+            <condition field="selections" scope="bf66-df47-524f-2146" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f99-9290-cec7-847e" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="bf66-df47-524f-2146" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="bf66-df47-524f-2146" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3255-8096-729b-c467" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="db0c-fe78-6396-f953" name="Long Spear (Mounted)" hidden="false" targetId="fcc2-904c-a694-d181" type="profile"/>
+        <infoLink id="0fa6-63d4-de53-576b" name="Hand Weapon" hidden="false" targetId="dda4-6e6a-60bc-59ea" type="profile"/>
+        <infoLink id="4d05-7ecd-6746-a3e7" name="Shield" hidden="false" targetId="9860-76f4-ad49-15bb" type="profile"/>
+        <infoLink id="d605-5c8d-062e-8c7f" name="Allies" hidden="false" targetId="b0d6-1bb7-0340-2b85" type="rule"/>
+        <infoLink id="f78d-d330-c92d-28de" name="Bow, Composite" hidden="false" targetId="f8fc-8cab-0ffb-6bde" type="profile"/>
+        <infoLink id="4224-7e21-a5a1-b84e" name="Light Armour" hidden="false" targetId="81fc-0bff-813c-b483" type="profile"/>
+        <infoLink id="ee3c-449e-6c48-8661" name="Fearsome" hidden="false" targetId="745c-e091-befd-e7e5" type="rule"/>
+        <infoLink id="2506-d81f-8fde-f78f" name="Impetuous Cavalry" hidden="false" targetId="740a-ad8c-884a-b9d6" type="rule"/>
+        <infoLink id="2c07-df11-abc6-3268" name="Shock Cavalry" hidden="false" targetId="7a38-a60f-b343-812a" type="rule"/>
+        <infoLink id="d4b8-3b2d-6fc9-bf83" name="Warhorses" hidden="false" targetId="096e-064f-a46d-36d7" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e7d3-971e-4eaf-02c3" name="New CategoryLink" hidden="false" targetId="2475-8e0d-fc70-f2da" primary="true"/>
+        <categoryLink id="0481-a196-5426-a52f" name="Georgian" hidden="false" targetId="b820-5c44-046e-e4a2" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d572-6199-ef27-bb6f" name="Monaspa Horse" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="name" value="Tadzreuli Horse">
+              <conditions>
+                <condition field="selections" scope="bf66-df47-524f-2146" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f99-9290-cec7-847e" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b775-0b59-a452-3cbe" type="min"/>
+            <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db43-51d2-0b1e-255a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d505-4da8-484d-9319" name="Monaspa Horse" publicationId="f213-af5e-b0b4-d9e9" page="131" hidden="false" typeId="b0ae-179f-841c-7b6a" typeName="1. Unit">
+              <modifiers>
+                <modifier type="set" field="name" value="Tadzreuli Horse">
+                  <conditions>
+                    <condition field="selections" scope="bf66-df47-524f-2146" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f99-9290-cec7-847e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition field="selections" scope="bf66-df47-524f-2146" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="089d-83de-8922-c752" type="equalTo"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" field="c658-9299-8241-d18b" value="18"/>
+                    <modifier type="set" field="f38d-b4f2-0682-8832" value="3+"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <characteristics>
+                <characteristic name="ORDER" typeId="15ee-a9d5-dc49-608e">Open</characteristic>
+                <characteristic name="MR" typeId="c658-9299-8241-d18b">20</characteristic>
+                <characteristic name="SHOOT" typeId="8cb5-c4aa-5a25-14a8">3+</characteristic>
+                <characteristic name="ATTACKS" typeId="12eb-8f76-2dc7-39cb">1</characteristic>
+                <characteristic name="HTH" typeId="8b70-2a78-827d-359f">4</characteristic>
+                <characteristic name="ARM" typeId="f38d-b4f2-0682-8832">4+</characteristic>
+                <characteristic name="KILL" typeId="b18e-b1c4-c216-8928">4+</characteristic>
+                <characteristic name="HITS" typeId="8372-2180-0579-5cc1">1</characteristic>
+                <characteristic name="DL" typeId="08c7-9b20-fc1c-5f73">7</characteristic>
+                <characteristic name="ML" typeId="f143-b5d0-5cec-c2e4">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="47.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3620-8691-9a6e-20c3" name="Upgrades" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="ae70-334e-fb9d-256e" name="Lances" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="2.0">
+                  <repeats>
+                    <repeat field="selections" scope="bf66-df47-524f-2146" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f14-ef3f-e63c-53ac" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d956-03b5-f994-b572" name="Lance" hidden="false" targetId="c699-4cc5-e5ee-61a8" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="089d-83de-8922-c752" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="3.0">
+                  <repeats>
+                    <repeat field="selections" scope="bf66-df47-524f-2146" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa37-d251-b24c-d22c" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ac1d-9a1c-5c87-1d78" name="Heavy Armour" hidden="false" targetId="a32c-1fe1-2c0d-91ae" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="4f99-9290-cec7-847e" name="Tadzreuli" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="591f-88f9-ff39-ed8b" value="4.0">
+                  <repeats>
+                    <repeat field="selections" scope="bf66-df47-524f-2146" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf66-df47-524f-2146" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e25-ce6d-0dd2-9e37" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8ee2-9a81-2f5b-6212" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5739-52b4-7c7f-9cfd" name="Drilled" hidden="false" targetId="d67d-1574-c36f-601e" type="rule"/>
+                <infoLink id="f64e-bdb4-0154-1d7c" name="Steady" hidden="false" targetId="1705-62c2-9b2a-df54" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="7ed1-9252-c288-2003" name="Monaspa Archers" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="7ed1-9252-c288-2003" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="7ed1-9252-c288-2003" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fecb-3385-878d-f259" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="2a4e-8e81-8489-d266" name="Hand Weapon" hidden="false" targetId="dda4-6e6a-60bc-59ea" type="profile"/>
+        <infoLink id="32e4-0ad7-ab17-8360" name="Allies" hidden="false" targetId="b0d6-1bb7-0340-2b85" type="rule"/>
+        <infoLink id="50fb-193a-07d4-b4f6" name="Bow, Composite" hidden="false" targetId="f8fc-8cab-0ffb-6bde" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="81a6-bdae-a212-c4bb" name="New CategoryLink" hidden="false" targetId="2475-8e0d-fc70-f2da" primary="true"/>
+        <categoryLink id="0148-9547-4b45-b659" name="Georgian" hidden="false" targetId="b820-5c44-046e-e4a2" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="43fe-dfc1-f430-ec11" name="Monaspa Archers" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3cf-1ae7-a865-e42d" type="min"/>
+            <constraint field="selections" scope="parent" value="24.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60e6-27ba-60ac-3ef7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6d13-e5e6-838a-d6d7" name="Monaspa Archers" publicationId="f213-af5e-b0b4-d9e9" page="131" hidden="false" typeId="b0ae-179f-841c-7b6a" typeName="1. Unit">
+              <characteristics>
+                <characteristic name="ORDER" typeId="15ee-a9d5-dc49-608e">Open</characteristic>
+                <characteristic name="MR" typeId="c658-9299-8241-d18b">10</characteristic>
+                <characteristic name="SHOOT" typeId="8cb5-c4aa-5a25-14a8">4+</characteristic>
+                <characteristic name="ATTACKS" typeId="12eb-8f76-2dc7-39cb">1</characteristic>
+                <characteristic name="HTH" typeId="8b70-2a78-827d-359f">3</characteristic>
+                <characteristic name="ARM" typeId="f38d-b4f2-0682-8832">N/A</characteristic>
+                <characteristic name="KILL" typeId="b18e-b1c4-c216-8928">4+</characteristic>
+                <characteristic name="HITS" typeId="8372-2180-0579-5cc1">1</characteristic>
+                <characteristic name="DL" typeId="08c7-9b20-fc1c-5f73">6</characteristic>
+                <characteristic name="ML" typeId="f143-b5d0-5cec-c2e4">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="2699-49d7-542d-3192" name="Kipchaks" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="2699-49d7-542d-3192" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="506b-6131-c00a-3959" value="1.0">
+              <repeats>
+                <repeat field="591f-88f9-ff39-ed8b" scope="2699-49d7-542d-3192" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e62-e162-b48e-3b75" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="20e4-86d2-84e3-c2da" name="Hand Weapon" hidden="false" targetId="dda4-6e6a-60bc-59ea" type="profile"/>
+        <infoLink id="3fcd-2741-6d90-20ab" name="Allies" hidden="false" targetId="b0d6-1bb7-0340-2b85" type="rule"/>
+        <infoLink id="7bd7-6720-c729-d462" name="Bow, Composite" hidden="false" targetId="f8fc-8cab-0ffb-6bde" type="profile"/>
+        <infoLink id="5e85-a45f-3282-241e" name="Light Armour" hidden="false" targetId="81fc-0bff-813c-b483" type="profile"/>
+        <infoLink id="d2bc-a9b5-7b67-268f" name="Shield" hidden="false" targetId="9860-76f4-ad49-15bb" type="profile"/>
+        <infoLink id="f59c-f413-acef-631f" name="Cantabrian Circle" hidden="false" targetId="6b96-d884-a51f-2a4e" type="rule"/>
+        <infoLink id="950a-5a1a-aa72-5947" name="Feigned Flight" hidden="false" targetId="648f-496d-57a5-0df6" type="rule"/>
+        <infoLink id="9c26-55ba-2ef9-e3aa" name="Scouts" hidden="false" targetId="4fa2-2c1c-2a10-0cee" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d5d7-ce0b-773e-7153" name="New CategoryLink" hidden="false" targetId="2475-8e0d-fc70-f2da" primary="true"/>
+        <categoryLink id="6fb6-945c-4daa-369c" name="Georgian" hidden="false" targetId="b820-5c44-046e-e4a2" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8013-62c8-3e86-cc95" name="Kipchaks" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea2b-70d7-ca2c-173a" type="min"/>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0705-b0d6-9e19-bfb5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="683b-916b-1b3f-6426" name="Kipchaks" publicationId="f213-af5e-b0b4-d9e9" page="131" hidden="false" typeId="b0ae-179f-841c-7b6a" typeName="1. Unit">
+              <characteristics>
+                <characteristic name="ORDER" typeId="15ee-a9d5-dc49-608e">Skirmish</characteristic>
+                <characteristic name="MR" typeId="c658-9299-8241-d18b">20</characteristic>
+                <characteristic name="SHOOT" typeId="8cb5-c4aa-5a25-14a8">4+</characteristic>
+                <characteristic name="ATTACKS" typeId="12eb-8f76-2dc7-39cb">1</characteristic>
+                <characteristic name="HTH" typeId="8b70-2a78-827d-359f">3</characteristic>
+                <characteristic name="ARM" typeId="f38d-b4f2-0682-8832">4+</characteristic>
+                <characteristic name="KILL" typeId="b18e-b1c4-c216-8928">4+</characteristic>
+                <characteristic name="HITS" typeId="8372-2180-0579-5cc1">1</characteristic>
+                <characteristic name="DL" typeId="08c7-9b20-fc1c-5f73">7</characteristic>
+                <characteristic name="ML" typeId="f143-b5d0-5cec-c2e4">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="591f-88f9-ff39-ed8b" value="31.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
